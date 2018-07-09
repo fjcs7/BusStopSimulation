@@ -1,0 +1,837 @@
+id;access;bicycle;crossing;foot;footway;highway;horse;junction;lanes;lit;maxspeed;name;oneway;service;surface
+0;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-17;-;-;-
+1;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-19;-;-;-
+2;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-18;-;-;-
+3;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-16;-;-;-
+4;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-1;-;-;-
+5;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-1;-;-;-
+6;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-1;-;-;-
+7;-;-;-;-;-;residential;-;-;-;-;-;RUA AB-2;-;-;-
+8;-;-;-;-;-;residential;-;-;-;-;-;RUA AB-2;-;-;-
+9;-;-;-;-;-;residential;-;-;-;-;-;RUA AB-2;-;-;-
+10;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-14;-;-;-
+11;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-14;-;-;-
+12;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;concrete
+13;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;concrete
+14;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;concrete
+15;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+16;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+17;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+18;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+19;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+20;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+21;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+22;-;-;-;-;-;footway;no;-;-;yes;-;-;-;-;-
+23;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+24;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+25;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+26;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+27;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+28;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+29;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+30;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+31;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+32;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+33;-;-;-;-;-;corridor;-;-;-;yes;-;-;-;-;-
+34;-;-;-;-;-;corridor;-;-;-;yes;-;-;-;-;-
+35;-;-;-;-;-;corridor;-;-;-;yes;-;-;-;-;-
+36;-;-;-;-;-;corridor;-;-;-;yes;-;-;-;-;-
+37;-;-;-;-;-;corridor;-;-;-;yes;-;-;-;-;-
+38;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+39;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+40;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+41;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+42;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+43;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+44;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+45;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+46;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+47;-;-;-;-;-;tertiary;-;-;-;-;60;Alameda Flamboyant;-;-;asphalt
+48;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Esperança;yes;-;asphalt
+49;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Esperança;yes;-;asphalt
+50;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Esperança;yes;-;asphalt
+51;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Esperança;yes;-;asphalt
+52;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Esperança;yes;-;asphalt
+53;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+54;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+55;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+56;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+57;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+58;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+59;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+60;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+61;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+62;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+63;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+64;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+65;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+66;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+67;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+68;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+69;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;asphalt
+70;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+71;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+72;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+73;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+74;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+75;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+76;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+77;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+78;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+79;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+80;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+81;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+82;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+83;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+84;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+85;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+86;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+87;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+88;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+89;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+90;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+91;-;-;-;-;-;secondary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+92;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+93;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+94;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+95;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+96;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+97;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+98;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+99;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+100;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+101;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+102;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+103;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+104;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+105;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+106;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;yes;-;-
+107;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+108;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+109;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+110;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+111;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+112;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+113;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+114;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+115;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+116;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+117;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+118;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+119;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+120;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+121;-;-;-;-;-;tertiary_link;-;-;-;-;-;-;yes;-;-
+122;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+123;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+124;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+125;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+126;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+127;-;-;-;-;-;secondary;-;roundabout;-;-;-;-;-;-;-
+128;-;-;-;-;-;tertiary_link;-;-;-;-;-;-;yes;-;-
+129;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+130;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+131;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+132;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+133;-;-;-;-;-;secondary;-;-;-;-;-;Avenida Pau Brasil;yes;-;-
+134;-;-;-;-;-;tertiary;-;-;-;-;-;Rua do Bosque;yes;-;-
+135;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+136;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+137;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+138;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+139;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+140;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+141;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+142;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;yes;-;-
+143;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+144;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;yes;-;-
+145;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+146;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+147;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+148;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+149;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+150;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+151;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+152;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+153;-;-;-;-;-;residential;-;-;-;-;-;Rua r-015;no;-;asphalt
+154;-;-;-;-;-;residential;-;-;-;-;-;Rua r-016;no;-;asphalt
+155;-;-;-;-;-;residential;-;-;-;-;-;Rua r-017;no;-;paved
+156;-;-;-;-;-;residential;-;-;-;-;-;Rua r-018;no;-;-
+157;-;-;-;-;-;residential;-;-;-;-;-;Rua r-019;no;-;-
+158;-;-;-;-;-;residential;-;-;-;-;-;Rua r-020;no;-;-
+159;-;-;-;-;-;residential;-;-;-;-;-;Rua r-020;no;-;-
+160;-;-;-;-;-;residential;-;-;-;-;-;-;no;-;-
+161;-;-;-;-;-;residential;-;-;-;-;-;Rua r-021;no;-;-
+162;-;-;-;-;-;residential;-;-;-;-;-;Rua r-022;no;-;-
+163;-;-;-;-;-;residential;-;-;-;-;-;-;no;-;-
+164;-;-;-;-;-;residential;-;-;-;-;-;Rua r-023;no;-;-
+165;-;yes;-;permissive;-;residential;no;-;2;-;50;Rua r-024;no;-;asphalt
+166;-;yes;-;permissive;-;residential;no;-;2;-;50;Rua r-024;no;-;asphalt
+167;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+168;-;-;-;-;-;secondary;-;roundabout;-;-;-;Alameda Flamboyant;-;-;-
+169;-;-;-;-;-;secondary;-;roundabout;-;-;-;Alameda Flamboyant;-;-;-
+170;-;-;-;-;-;secondary;-;roundabout;-;-;-;Alameda Flamboyant;-;-;-
+171;-;-;-;-;-;secondary;-;roundabout;-;-;-;Alameda Flamboyant;-;-;-
+172;-;-;-;-;-;secondary;-;roundabout;-;-;-;Alameda Flamboyant;-;-;-
+173;-;-;-;-;-;secondary;-;roundabout;-;-;-;Alameda Flamboyant;-;-;-
+174;-;-;-;-;-;tertiary_link;-;-;-;-;-;Alameda Flamboyant;yes;-;-
+175;-;-;-;-;-;tertiary_link;-;-;-;-;-;Alameda Flamboyant;yes;-;-
+176;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+177;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+178;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+179;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+180;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+181;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+182;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+183;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+184;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+185;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+186;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+187;-;yes;-;permissive;-;secondary;no;-;2;-;50;Avenida Esperança;yes;-;asphalt
+188;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+189;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+190;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+191;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+192;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+193;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+194;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+195;-;-;-;-;-;residential;-;-;-;-;-;-;-;-;-
+196;-;-;-;-;-;residential;-;-;-;-;-;-;-;-;-
+197;-;-;-;-;-;residential;-;-;-;-;-;-;-;-;-
+198;-;-;-;-;-;residential;-;-;-;-;-;-;-;-;-
+199;-;-;-;-;-;residential;-;-;-;-;-;-;-;-;-
+200;-;-;-;-;-;tertiary;-;-;-;-;-;-;no;-;-
+201;-;-;-;-;-;tertiary;-;-;-;-;-;-;no;-;-
+202;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+203;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+204;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+205;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+206;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+207;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+208;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+209;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+210;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+211;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Aroeira;-;-;-
+212;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;yes;-;-
+213;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+214;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+215;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+216;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+217;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+218;-;-;-;-;-;service;-;-;-;-;-;-;yes;-;-
+219;-;-;-;-;-;service;-;-;-;-;-;-;yes;-;-
+220;-;-;-;-;-;track;-;-;-;-;-;-;-;-;unpaved
+221;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+222;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+223;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+224;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+225;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+226;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+227;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+228;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+229;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+230;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+231;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+232;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+233;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+234;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+235;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+236;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+237;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+238;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+239;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+240;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+241;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+242;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+243;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+244;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+245;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+246;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+247;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+248;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+249;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+250;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+251;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+252;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+253;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+254;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+255;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+256;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+257;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+258;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+259;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+260;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+261;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+262;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+263;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+264;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+265;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+266;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+267;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+268;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+269;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+270;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+271;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+272;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+273;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+274;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+275;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+276;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+277;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+278;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+279;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+280;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+281;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+282;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+283;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+284;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+285;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+286;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+287;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+288;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+289;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+290;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+291;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+292;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+293;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+294;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+295;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+296;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+297;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+298;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+299;-;-;-;-;-;tertiary;-;-;-;-;-;-;-;-;-
+300;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+301;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+302;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+303;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+304;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+305;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+306;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+307;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+308;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+309;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+310;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+311;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+312;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+313;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+314;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+315;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+316;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+317;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+318;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+319;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+320;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+321;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+322;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+323;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+324;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+325;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+326;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+327;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+328;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+329;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+330;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+331;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+332;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+333;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+334;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+335;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+336;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+337;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+338;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+339;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+340;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+341;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;-;-;-
+342;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+343;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+344;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+345;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+346;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+347;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+348;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+349;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+350;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+351;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+352;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+353;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+354;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+355;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+356;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+357;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+358;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+359;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+360;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+361;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;asphalt
+362;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;asphalt
+363;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;asphalt
+364;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+365;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+366;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+367;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+368;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+369;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+370;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+371;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+372;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+373;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+374;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+375;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+376;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+377;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+378;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+379;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+380;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+381;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+382;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+383;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+384;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+385;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+386;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+387;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+388;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+389;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+390;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;-
+391;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;-
+392;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;-
+393;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;-
+394;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;-
+395;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;-
+396;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+397;-;-;-;-;-;residential;-;-;-;-;-;Rua 6;-;-;-
+398;-;-;-;-;-;residential;-;-;-;-;-;Rua 6;-;-;-
+399;-;-;-;-;-;residential;-;-;-;-;-;Rua 6;-;-;-
+400;-;-;-;-;-;residential;-;-;-;-;-;Rua 3;-;-;-
+401;-;-;-;-;-;residential;-;-;-;-;-;Rua 3;-;-;-
+402;-;-;-;-;-;residential;-;-;-;-;-;Rua 5;-;-;-
+403;-;-;-;-;-;residential;-;-;-;-;-;Rua 5;-;-;-
+404;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+405;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+406;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+407;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+408;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+409;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+410;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+411;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+412;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+413;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+414;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+415;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+416;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+417;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+418;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+419;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+420;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-15;-;-;-
+421;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-15;-;-;-
+422;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-15;-;-;-
+423;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-15;-;-;-
+424;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-15;-;-;-
+425;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-15;-;-;-
+426;-;-;-;-;-;residential;-;-;-;-;-;Rua 5;-;-;-
+427;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+428;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+429;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+430;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;-;-;-
+431;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;yes;-;-
+432;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Flamboyant;yes;-;-
+433;-;-;-;-;-;secondary;-;-;-;-;-;-;yes;-;-
+434;-;-;-;-;-;tertiary_link;-;-;-;-;-;-;yes;-;-
+435;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Jacarandá;-;-;-
+436;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Jacarandá;-;-;-
+437;-;-;-;-;-;tertiary;-;-;-;-;-;Alameda Palmeiras;yes;-;-
+438;-;yes;-;permissive;-;tertiary;no;-;2;-;50;Avenida Esperança;no;-;asphalt
+439;-;-;-;-;-;residential;-;-;-;-;-;Rua AB-21;-;-;-
+440;-;-;-;-;sidewalk;footway;no;-;-;-;-;-;-;-;concrete
+441;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+442;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+443;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+444;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+445;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+446;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+447;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+448;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+449;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+450;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+451;-;-;-;-;-;service;-;-;-;-;-;-;yes;-;-
+452;-;-;-;-;-;service;-;-;-;-;-;-;yes;-;-
+453;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+454;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+455;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+456;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+457;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+458;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+459;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+460;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+461;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+462;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+463;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+464;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+465;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+466;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+467;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+468;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+469;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+470;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+471;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+472;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+473;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+474;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+475;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+476;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+477;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+478;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+479;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+480;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+481;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+482;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+483;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+484;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+485;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+486;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+487;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+488;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+489;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+490;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+491;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+492;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+493;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+494;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+495;-;-;-;-;sidewalk;footway;-;-;-;yes;-;-;-;-;-
+496;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+497;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+498;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+499;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+500;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+501;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+502;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+503;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+504;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+505;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+506;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+507;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+508;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+509;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+510;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+511;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+512;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+513;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+514;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+515;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+516;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+517;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+518;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+519;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+520;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+521;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+522;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+523;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+524;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+525;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+526;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+527;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+528;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+529;-;-;-;-;-;tertiary;-;roundabout;-;-;-;-;yes;-;-
+530;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+531;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+532;-;-;-;-;-;tertiary_link;-;-;-;-;-;-;yes;-;-
+533;-;-;-;-;-;tertiary_link;-;-;-;-;-;-;yes;-;-
+534;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+535;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+536;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+537;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+538;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+539;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+540;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+541;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+542;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+543;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+544;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+545;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+546;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+547;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+548;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+549;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+550;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+551;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+552;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+553;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+554;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+555;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+556;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+557;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+558;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+559;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+560;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+561;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+562;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+563;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+564;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+565;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+566;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+567;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+568;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+569;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+570;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+571;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+572;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+573;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+574;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+575;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+576;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+577;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+578;-;-;-;-;-;footway;-;-;-;yes;-;-;-;-;-
+579;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+580;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+581;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+582;-;-;-;-;-;tertiary_link;-;-;-;-;-;-;-;-;-
+583;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+584;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+585;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+586;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+587;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+588;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+589;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+590;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+591;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+592;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+593;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+594;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+595;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+596;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+597;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+598;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+599;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+600;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+601;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+602;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+603;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+604;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+605;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+606;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+607;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+608;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+609;-;-;-;-;-;service;-;-;-;-;-;-;-;driveway;-
+610;permissive;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+611;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+612;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+613;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+614;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+615;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+616;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+617;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+618;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+619;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+620;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+621;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+622;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+623;no;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+624;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+625;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+626;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+627;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+628;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+629;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+630;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+631;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+632;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+633;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+634;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+635;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+636;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+637;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+638;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+639;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+640;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+641;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+642;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+643;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+644;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+645;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+646;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+647;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+648;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+649;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+650;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+651;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+652;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+653;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+654;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+655;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+656;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+657;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+658;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+659;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+660;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+661;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+662;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+663;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+664;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+665;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;-;-;-
+666;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;-;-;-
+667;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;-;-;-
+668;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;-;-;-
+669;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;-;-;-
+670;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;yes;-;-
+671;-;-;-;-;-;tertiary;-;-;-;-;-;Rua Samambaia;yes;-;-
+672;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+673;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+674;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+675;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+676;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+677;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+678;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+679;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+680;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+681;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+682;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+683;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+684;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+685;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+686;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+687;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+688;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+689;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+690;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+691;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+692;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+693;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+694;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+695;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+696;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+697;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+698;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+699;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+700;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+701;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+702;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+703;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+704;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+705;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+706;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+707;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+708;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+709;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+710;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+711;-;-;-;-;-;tertiary;-;-;-;-;-;Rua do Bosque;-;-;-
+712;-;-;-;-;-;tertiary;-;-;-;-;-;Rua do Bosque;-;-;-
+713;-;-;-;-;-;tertiary;-;-;-;-;-;Rua do Bosque;-;-;-
+714;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+715;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+716;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+717;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+718;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+719;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+720;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+721;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+722;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+723;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+724;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+725;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+726;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+727;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+728;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+729;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+730;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+731;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+732;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+733;-;-;-;-;-;service;-;-;-;-;-;-;-;parking_aisle;-
+734;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+735;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+736;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+737;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+738;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+739;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+740;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+741;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+742;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+743;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+744;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+745;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+746;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+747;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+748;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+749;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+750;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+751;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+752;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+753;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+754;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+755;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+756;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+757;-;-;-;-;-;footway;-;-;-;-;-;-;-;-;-
+758;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+759;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+760;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+761;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+762;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+763;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+764;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+765;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+766;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+767;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+768;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+769;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+770;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+771;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+772;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+773;-;-;-;-;-;unclassified;-;-;-;-;-;-;-;-;-
+774;-;-;-;-;-;unclassified;-;-;-;-;-;-;-;-;-
+775;-;-;-;-;-;unclassified;-;-;-;-;-;-;-;-;-
+776;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+777;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+778;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+779;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+780;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+781;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+782;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+783;-;-;-;-;-;tertiary;-;-;-;-;-;-;yes;-;-
+784;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;yes;-;-
+785;-;-;-;-;-;residential;-;-;-;-;-;-;yes;-;-
+786;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;-;-;-
+787;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;-;-;-
+788;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;-;-;-
+789;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;-;-;-
+790;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;-;-;-
+791;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;-;-;-
+792;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;-;-;-
+793;-;-;-;-;-;residential;-;-;-;-;-;-;-;-;-
+794;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+795;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+796;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+797;-;-;-;-;-;primary;-;-;-;-;-;Avenida Nerópolis;yes;-;paved
+798;-;-;-;-;-;tertiary;-;-;-;-;-;Rua R-2;yes;-;-
+799;-;-;-;-;-;residential;-;-;-;-;-;-;yes;-;-
+800;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+801;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+802;-;-;-;-;-;service;-;-;-;-;-;-;-;-;-
+803;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+804;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+805;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+806;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+807;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+808;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+809;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;unpaved
+810;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;paved
+811;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;paved
+812;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;paved
+813;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+814;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+815;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+816;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+817;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+818;-;-;zebra;-;crossing;footway;-;-;-;-;-;-;-;-;-
+819;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+820;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;asphalt
+821;-;-;-;-;-;secondary_link;-;-;-;-;-;-;yes;-;-
+822;-;-;-;-;-;secondary_link;-;-;-;-;-;-;yes;-;-
+823;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+824;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+825;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+826;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+827;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+828;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+829;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+830;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+831;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+832;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+833;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
+834;-;-;-;-;sidewalk;footway;-;-;-;-;-;-;-;-;-
+835;-;-;-;-;-;corridor;-;-;-;-;-;-;-;-;-
