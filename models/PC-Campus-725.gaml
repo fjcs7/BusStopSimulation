@@ -14,6 +14,7 @@ global{
 	list<pair<int,point>> localizacaoDasParadas; 
 	bus_route rotaBus;
 	map<bus_route, float> roads_weight;
+	int qtdPassageirosPorPonto <- 1000;
 
 
 	//map used to filter the object to build from the OSM file according to attributes. for an exhaustive list, see: http://wiki.openstreetmap.org/wiki/Map_Features
@@ -81,17 +82,29 @@ global{
 		
 		//Weights map of the graph for those who will know the shortest road by taking into account the weight of the edges
 		roads_weight <- bus_route as_map (each:: each.shape.perimeter);
-		bus_network <- as_edge_graph(bus_route);
+		bus_network <- directed(as_edge_graph(bus_route));
 		
 		create bus  with:[
 			color :: #orange,
 			size :: 6.0,
 			route :: bus_route as_map (each:: each.shape.perimeter)
-		];
-
-	}	
+		];	
+		
+		loop busStopsLocation over: localizacaoDasParadas{
+			if((busStopsLocation.key != first(listaDeParadas).value) and (busStopsLocation.key != last(listaDeParadas).value)){
+				loop i from:1 to: qtdPassageirosPorPonto{
+					create passenger with: [
+						size::0.5,
+						firstStop::busStopsLocation.value,
+						route :: bus_route as_map (each:: each.shape.perimeter)
+					];
+				}
+			}
+		}
+	
+	}
+	
 }
-
 
 species osm_agent {
 	string highway_str;
@@ -148,17 +161,16 @@ species bus skills: [moving] {
 	{
 		if(location != nextStop)
 		{
-			write("DiferentyWay");
 			if (path_to_follow = nil) {
 				//Find the shortest path using the agent's own weights to compute the shortest path
-				path_to_follow <- path_between(bus_network with_weights route, location,nextStop);
+			   path_to_follow <- path_between (bus_network with_weights route, location,nextStop);
+				//path_to_follow <- path_from_nodes(graph: bus_network, nodes: [location, nextStop]);
 			}
 			//the agent follows the path it computed but with the real weights of the graph
 			do follow path:path_to_follow speed: 5.0 move_weights: roads_weight;
 		} 
 		else if(location = nextStop) 
 		{
-			write("NewWay");
 			if(nextStop != (localizacaoDasParadas first_with (each.key = last(listaDeParadas).value)).value){
 				int nrActualBusStop <- (localizacaoDasParadas first_with (each.value = nextStop)).key + 1;
 				//Select next bus_stop positon to go 
@@ -174,6 +186,36 @@ species bus skills: [moving] {
 	aspect base {
 		draw circle(size) color: color;
 	}
+}
+
+species passenger skills: [moving]{
+	rgb color <- #yellow;
+	float size;
+	point firstStop;
+	point nextStop;
+	path path_to_follow;
+	map<bus_route, float> route; 
+	
+	init {
+		//firstStop <- (localizacaoDasParadas first_with (each.key = 1)).value;
+		nextStop <- (localizacaoDasParadas first_with (each.key = 2)).value;
+		location <- firstStop;
+		path_to_follow <- path(bus_network);
+	}
+	
+//	reflex movement 
+//	when:(location != nextStop)	{
+//			if (path_to_follow = nil) {
+//				//Find the shortest path using the agent's own weights to compute the shortest path
+//				path_to_follow <- path_between(bus_network with_weights route, location,nextStop);
+//			}
+//			//the agent follows the path it computed but with the real weights of the graph
+//			//do follow path:path_to_follow speed: 5.0 move_weights: roads_weight;
+//	}
+	
+	aspect base {
+		draw circle(size) color: color;
+	}
 }  
 
 experiment load_OSM type: gui {
@@ -184,6 +226,7 @@ experiment load_OSM type: gui {
 			species bus_route aspect: geom ;
 			species bus_stop refresh: false ;
 			species bus aspect: base;
+			species passenger aspect: base;
 		}
 	}
 }
