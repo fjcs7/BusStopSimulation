@@ -15,6 +15,7 @@ global{
 	bus_route rotaBus;
 	map<bus_route, float> roads_weight;
 	int qtdPassageirosPorPonto <- 1000;
+	float distance_to_intercept <- 0.1;
 
 
 	//map used to filter the object to build from the OSM file according to attributes. for an exhaustive list, see: http://wiki.openstreetmap.org/wiki/Map_Features
@@ -91,17 +92,13 @@ global{
 		];	
 		
 		loop busStopsLocation over: localizacaoDasParadas{
-			if((busStopsLocation.key != first(listaDeParadas).value) and (busStopsLocation.key != last(listaDeParadas).value)){
-				loop i from:1 to: qtdPassageirosPorPonto{
-					create passenger with: [
-						size::0.5,
-						firstStop::busStopsLocation.value,
-						route :: bus_route as_map (each:: each.shape.perimeter)
-					];
-				}
+			if(busStopsLocation.key != last(listaDeParadas).value){
+				create passenger number: qtdPassageirosPorPonto  with: [
+					size::0.5,
+					location::busStopsLocation.value
+				];
 			}
 		}
-	
 	}
 	
 }
@@ -141,15 +138,18 @@ species bus_route {
 }
 
 species bus skills: [moving] {
+	int qtMax <- 50;
 	rgb color <- #green;
 	float size;
 	map<bus_route, float> route; 
 	
-	int lotacao <- 0 min:0 max:50;
+	int lotacao <- 0 min:0 max:qtMax;
 	bool paradaSolicitada;
 	point firstStop;
 	point nextStop;
 	path path_to_follow;
+	map<passenger> passengers;
+	bool isEmpty <- lotacao != qtMax;
 	
 	init {
 		firstStop <- (localizacaoDasParadas first_with (each.key = 1)).value;
@@ -157,10 +157,12 @@ species bus skills: [moving] {
 		location <- firstStop;
 	}
 	
+	
 	reflex movement 
 	{
 		if(location != nextStop)
 		{
+			write((passengers index_of last(passengers)));
 			if (path_to_follow = nil) {
 				//Find the shortest path using the agent's own weights to compute the shortest path
 			   path_to_follow <- path_between (bus_network with_weights route, location,nextStop);
@@ -191,30 +193,31 @@ species bus skills: [moving] {
 species passenger skills: [moving]{
 	rgb color <- #yellow;
 	float size;
-	point firstStop;
-	point nextStop;
-	path path_to_follow;
-	map<bus_route, float> route; 
+	bus myBus <- nil;
 	
-	init {
-		//firstStop <- (localizacaoDasParadas first_with (each.key = 1)).value;
-		nextStop <- (localizacaoDasParadas first_with (each.key = 2)).value;
-		location <- firstStop;
-		path_to_follow <- path(bus_network);
+	reflex movement
+	{
+		write(myBus);
+		if(myBus!=nil){
+			write(myBus.name);
+			location <- myBus.location;
+		}
 	}
-	
-//	reflex movement 
-//	when:(location != nextStop)	{
-//			if (path_to_follow = nil) {
-//				//Find the shortest path using the agent's own weights to compute the shortest path
-//				path_to_follow <- path_between(bus_network with_weights route, location,nextStop);
-//			}
-//			//the agent follows the path it computed but with the real weights of the graph
-//			//do follow path:path_to_follow speed: 5.0 move_weights: roads_weight;
-//	}
 	
 	aspect base {
 		draw circle(size) color: color;
+		ask bus at_distance(distance_to_intercept) {
+			if(myself.myBus=nil){
+				write(self.name);
+				if(self.lotacao != self.qtMax){
+					//Adding bus at passenger
+					myself.myBus <- self;
+					//Add passenger at list of bus passengers
+					self.passengers  <- self.passengers + myself;
+					self.lotacao <- self.lotacao + 1;
+				}
+			}
+		}
 	}
 }  
 
