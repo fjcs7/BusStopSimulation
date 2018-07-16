@@ -10,11 +10,10 @@ model PCCampus725
 global{
 
 	//preenchendo os dados da ordem das bus_stops(paradas)
-	list<pair<string,int>> listaDeParadas;
-	list<pair<int,point>> localizacaoDasParadas; 
-	bus_route rotaBus;
+	list<pair<string,int>> stopList;
+	list<pair<int,point>> stopsLocation; 
 	map<bus_route, float> roads_weight;
-	int qtdPassageirosPorPonto <- 1000;
+	int nrPassengerForStop <- 20;
 	float distance_to_intercept <- 0.1;
 
 
@@ -33,21 +32,22 @@ global{
 											 highway_str::string(read("highway")), 
 			                                 bus_stop_str::string(read("public_transport"))];
 											
-		listaDeParadas <- listaDeParadas + [pair<string,int>('4774'::1)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3353'::2)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3355'::3)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('6363'::4)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('6364'::5)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('6365'::6)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3359'::7)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3360'::8)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3361'::9)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3358'::10)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('6366'::11)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('6367'::12)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3356'::13)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3354'::14)];
-		listaDeParadas <- listaDeParadas + [pair<string,int>('3379'::15)];
+		//Adding bus stop sequence at list of stops
+		add ('4774'::1) to: stopList;
+		add ('3353'::2) to: stopList;
+		add ('3355'::3) to: stopList;
+		add ('6363'::4) to: stopList;
+		add ('6364'::5) to: stopList;
+		add ('6365'::6) to: stopList;
+		add ('3359'::7) to: stopList;
+		add ('3360'::8) to: stopList;
+		add ('3361'::9) to: stopList;
+		add ('3358'::10) to: stopList;
+		add ('6366'::11) to: stopList;
+		add ('6367'::12) to: stopList;
+		add ('3356'::13) to: stopList;
+		add ('3354'::14) to: stopList;
+		add ('3379'::15) to: stopList; 	
 		
 		//from the created generic agents, creation of the selected agents
 		bool slow;
@@ -58,23 +58,24 @@ global{
 								   type:: "road",
 								   name:: name];
 			}else if (bus_stop_str != nil){
-				 pair dadosDoPonto <- listaDeParadas first_with (each.key = name);
-				 if(dadosDoPonto.value != 0){
+				 pair busStopData <- stopList first_with (each.key = name);
+				 if(busStopData.value != 0){
 					 if (bus_stop_str = "stop_position"){
-					 	int nrDoPonto <- dadosDoPonto.value;
-					 	localizacaoDasParadas <- localizacaoDasParadas + [pair<int,point>(nrDoPonto::shape)] ;
+					 	int nrDoPonto <- busStopData.value;
+					 	//Adding number point and stop location
+					 	add pair<int,point>(nrDoPonto::shape) to: stopsLocation;
 					 	create bus_stop with:[shape ::shape, 
 					 		                  type:: "bus_stop",
-					 		                  name:: dadosDoPonto.key,
-					 		                  ref:: dadosDoPonto.value];
+					 		                  name:: busStopData.key,
+					 		                  ref:: busStopData.value];
 					 } 
 				 }
 			}else if (bus_route_str != nil){
-				 if (bus_route_str = "bus"){
-				 	create bus_route with:[shape ::shape, 
-				 						   type:: "bus_route",
-				 						   name:: "pcCampusRoute"] ;
-				 } 
+				if (bus_route_str = "bus"){
+					create bus_route with:[shape ::shape, 
+										   type:: "bus_route",
+										   name:: "pcCampusRoute"];
+				} 
 			}
 			
 			//do the generic agent die
@@ -91,10 +92,27 @@ global{
 			route :: bus_route as_map (each:: each.shape.perimeter)
 		];	
 		
-		loop busStopsLocation over: localizacaoDasParadas{
-			if(busStopsLocation.key != last(listaDeParadas).value){
-				create passenger number: qtdPassageirosPorPonto  with: [
+		loop busStopsLocation over: stopsLocation{
+			if(busStopsLocation.key != last(stopList).value){
+				
+				//Supose that one passenger goes to one of point destination betwen 2 or 7 points before hes arrive
+				int minDestination <- busStopsLocation.key + 2;
+				int maxDestination <- busStopsLocation.key + 7;
+				
+				if(maxDestination > length(stopsLocation)){
+					maxDestination <- length(stopsLocation) - maxDestination;
+				}
+				
+				int pointNumber <- rnd(minDestination,maxDestination);
+				if(pointNumber>15 or pointNumber <= 0){
+					write(pointNumber);
+					
+				}
+				pair<int, point> destinationPoint <- stopsLocation first_with (each.key = pointNumber) ;
+				
+				create passenger number: nrPassengerForStop  with: [
 					size::0.5,
+					stopDestination:: destinationPoint,
 					location::busStopsLocation.value
 				];
 			}
@@ -111,7 +129,6 @@ species osm_agent {
 	
 species road {
 	rgb color <- #blue;
-	string name;
 	string type;
 	aspect default {
 		draw shape color: color; 
@@ -120,7 +137,7 @@ species road {
 
 species bus_stop {
 	rgb color <- #red;
-	string name;
+	string usName;
 	string type;
 	int ref;
 	aspect default {
@@ -130,7 +147,7 @@ species bus_stop {
 
 species bus_route {
 	rgb color;
-	string name;
+	string busRouteName;
 	string type;
 	aspect geom {
 		draw shape color: #green;
@@ -138,49 +155,54 @@ species bus_route {
 }
 
 species bus skills: [moving] {
-	int qtMax <- 50;
+	int maxCapacity <- 50;
 	rgb color <- #green;
 	float size;
 	map<bus_route, float> route; 
 	
-	int lotacao <- 0 min:0 max:qtMax;
+	int lotacao <- 0 min:0 update:length(self.passengers);
 	bool paradaSolicitada;
 	point firstStop;
 	point nextStop;
 	path path_to_follow;
-	map<passenger> passengers;
-	bool isEmpty <- lotacao != qtMax;
+	list<passenger> passengers;
+	bool isFull <- false update:lotacao = maxCapacity;
+	float busSpeed <- 5.0;
+	int nrOfTravels <- 0;
 	
 	init {
-		firstStop <- (localizacaoDasParadas first_with (each.key = 1)).value;
-		nextStop <- (localizacaoDasParadas first_with (each.key = 2)).value;
+		firstStop <- (stopsLocation first_with (each.key = 1)).value;
+		nextStop <- (stopsLocation first_with (each.key = 2)).value;
 		location <- firstStop;
 	}
-	
 	
 	reflex movement 
 	{
 		if(location != nextStop)
 		{
-			write((passengers index_of last(passengers)));
 			if (path_to_follow = nil) {
 				//Find the shortest path using the agent's own weights to compute the shortest path
 			   path_to_follow <- path_between (bus_network with_weights route, location,nextStop);
 				//path_to_follow <- path_from_nodes(graph: bus_network, nodes: [location, nextStop]);
 			}
 			//the agent follows the path it computed but with the real weights of the graph
-			do follow path:path_to_follow speed: 5.0 move_weights: roads_weight;
+			do follow path:path_to_follow speed: busSpeed move_weights: roads_weight;
 		} 
 		else if(location = nextStop) 
 		{
-			if(nextStop != (localizacaoDasParadas first_with (each.key = last(listaDeParadas).value)).value){
-				int nrActualBusStop <- (localizacaoDasParadas first_with (each.value = nextStop)).key + 1;
-				//Select next bus_stop positon to go 
-				point nextPoint <- (localizacaoDasParadas first_with (each.key = nrActualBusStop)).value;
-				if(nextPoint!=nil){
-					nextStop <- nextPoint;
-					path_to_follow <- nil;	
+			int nrActualBusStop <- 1;
+			if(nextStop != (stopsLocation first_with (each.key = last(stopList).value)).value){
+				nrActualBusStop <- (stopsLocation first_with (each.value = nextStop)).key + 1;
+			}
+			//Select next bus_stop positon to go 
+			point nextPoint <- (stopsLocation first_with (each.key = nrActualBusStop)).value;
+			if(nextPoint!=nil){
+				nextStop <- nextPoint;
+				if(nrActualBusStop=1){
+					location <- nextPoint;
+					nrOfTravels <- nrOfTravels+1;
 				}
+				path_to_follow <- nil;	
 			}
 		}
 	} 
@@ -191,16 +213,22 @@ species bus skills: [moving] {
 }
 
 species passenger skills: [moving]{
-	rgb color <- #yellow;
+	rgb color <- #black;
 	float size;
 	bus myBus <- nil;
+	pair<int, point> stopDestination;
 	
 	reflex movement
 	{
-		write(myBus);
 		if(myBus!=nil){
-			write(myBus.name);
 			location <- myBus.location;
+			if(location=stopDestination.value){
+				ask myBus{
+					remove all: myself from:self.passengers;
+					self.lotacao <- self.lotacao -1; 
+				}
+				do die;
+			}
 		}
 	}
 	
@@ -208,13 +236,11 @@ species passenger skills: [moving]{
 		draw circle(size) color: color;
 		ask bus at_distance(distance_to_intercept) {
 			if(myself.myBus=nil){
-				write(self.name);
-				if(self.lotacao != self.qtMax){
+				if(not (length(self.passengers)=self.maxCapacity)){
 					//Adding bus at passenger
 					myself.myBus <- self;
 					//Add passenger at list of bus passengers
-					self.passengers  <- self.passengers + myself;
-					self.lotacao <- self.lotacao + 1;
+					add myself to: self.passengers;
 				}
 			}
 		}
@@ -222,14 +248,14 @@ species passenger skills: [moving]{
 }  
 
 experiment load_OSM type: gui {
-	float minimum_cycle_duration <- 0.1;
+	float cyrcle <- 60 #seconds;
 	output {
 		display map type: opengl {
-			species road refresh: false  ;
-			species bus_route aspect: geom ;
-			species bus_stop refresh: false ;
-			species bus aspect: base;
-			species passenger aspect: base;
+			species road refresh: true  ;
+			species bus_route refresh: true aspect: geom ;
+			species bus_stop refresh: true ;
+			species bus refresh: true aspect: base;
+			species passenger refresh: true  aspect: base;
 		}
 	}
 }
