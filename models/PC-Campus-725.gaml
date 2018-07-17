@@ -14,7 +14,10 @@ global{
 	list<pair<int,point>> stopsLocation; 
 	map<bus_route, float> roads_weight;
 	int nrPassengerForStop <- 20;
-	float distance_to_intercept <- 0.1;
+	float distance_to_intercept <- 3.0;
+	int nrOfBuses <- 1;
+	list<string> simulationsTypes <- ["direct","twoBusDirect","alternatingStops"]; 
+	string typeSimulation <- "direct";
 
 
 	//map used to filter the object to build from the OSM file according to attributes. for an exhaustive list, see: http://wiki.openstreetmap.org/wiki/Map_Features
@@ -98,17 +101,26 @@ global{
 				//Supose that one passenger goes to one of point destination betwen 2 or 7 points before hes arrive
 				int minDestination <- busStopsLocation.key + 2;
 				int maxDestination <- busStopsLocation.key + 7;
-				
+
+				if(minDestination > length(stopsLocation)){
+					minDestination <- minDestination - length(stopsLocation);
+					write("min: " + minDestination);
+				}				
+
 				if(maxDestination > length(stopsLocation)){
-					maxDestination <- length(stopsLocation) - maxDestination;
+					maxDestination <- maxDestination - length(stopsLocation);
+					write("max: " + maxDestination);
 				}
 				
 				int pointNumber <- rnd(minDestination,maxDestination);
 				if(pointNumber>15 or pointNumber <= 0){
 					write(pointNumber);
-					
 				}
 				pair<int, point> destinationPoint <- stopsLocation first_with (each.key = pointNumber) ;
+				if(destinationPoint=(0::nil)){
+					write(destinationPoint);
+					write(pointNumber);
+				}
 				
 				create passenger number: nrPassengerForStop  with: [
 					size::0.5,
@@ -118,7 +130,11 @@ global{
 			}
 		}
 	}
-	
+
+	reflex stop_simulation when: (length(passenger)=0) {
+		//Pause simulation when passengers numbers decrease for zero
+		do pause;
+	} 	
 }
 
 species osm_agent {
@@ -176,7 +192,7 @@ species bus skills: [moving] {
 		location <- firstStop;
 	}
 	
-	reflex movement 
+	reflex movement when: typeSimulation = "direct"
 	{
 		if(location != nextStop)
 		{
@@ -191,6 +207,10 @@ species bus skills: [moving] {
 		else if(location = nextStop) 
 		{
 			int nrActualBusStop <- 1;
+			loop times: 10* #cycle{
+				write(#cycle);
+			}
+			speed <-0.0;
 			if(nextStop != (stopsLocation first_with (each.key = last(stopList).value)).value){
 				nrActualBusStop <- (stopsLocation first_with (each.value = nextStop)).key + 1;
 			}
@@ -218,10 +238,15 @@ species passenger skills: [moving]{
 	bus myBus <- nil;
 	pair<int, point> stopDestination;
 	
+	init{
+		speed <- 0.0;
+	}
+	
 	reflex movement
 	{
 		if(myBus!=nil){
 			location <- myBus.location;
+			speed <- myBus.busSpeed;
 			if(location=stopDestination.value){
 				ask myBus{
 					remove all: myself from:self.passengers;
@@ -247,8 +272,8 @@ species passenger skills: [moving]{
 	}
 }  
 
-experiment load_OSM type: gui {
-	float cyrcle <- 60 #seconds;
+experiment BusExperiment type: gui {
+	float cycle <- 60 #seconds;
 	output {
 		display map type: opengl {
 			species road refresh: true  ;
