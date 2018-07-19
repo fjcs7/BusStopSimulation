@@ -18,6 +18,8 @@ global{
 	int nrOfBuses <- 1;
 	list<string> simulationsTypes <- ["direct","twoBusDirect","alternatingStops"]; 
 	string typeSimulation <- "direct";
+	bool intermintentStop;
+	int nbBuses<- 2;
 
 
 	//map used to filter the object to build from the OSM file according to attributes. for an exhaustive list, see: http://wiki.openstreetmap.org/wiki/Map_Features
@@ -88,12 +90,16 @@ global{
 		//Weights map of the graph for those who will know the shortest road by taking into account the weight of the edges
 		roads_weight <- bus_route as_map (each:: each.shape.perimeter);
 		bus_network <- directed(as_edge_graph(bus_route));
-		
-		create bus  with:[
-			color :: #orange,
-			size :: 6.0,
-			route :: bus_route as_map (each:: each.shape.perimeter)
-		];	
+		list<int> nbInicialStop<- [1,7];
+		loop nrValues from: 0 to: nbBuses -1 {
+			create bus number:nbBuses with:[
+				color :: #orange,
+				size :: 6.0,
+				route :: bus_route as_map (each:: each.shape.perimeter),
+				firstStop:: (stopsLocation first_with (each.key = nbInicialStop[nrValues])).value,
+				nextStop :: (stopsLocation first_with (each.key = nbInicialStop[nrValues]+1)).value
+			];	
+		}
 		
 		loop busStopsLocation over: stopsLocation{
 			if(busStopsLocation.key != last(stopList).value){
@@ -187,8 +193,6 @@ species bus skills: [moving] {
 	int nrOfTravels <- 0;
 	
 	init {
-		firstStop <- (stopsLocation first_with (each.key = 1)).value;
-		nextStop <- (stopsLocation first_with (each.key = 2)).value;
 		location <- firstStop;
 	}
 	
@@ -274,6 +278,7 @@ species passenger skills: [moving]{
 
 experiment BusExperiment type: gui {
 	float cycle <- 60 #seconds;
+	
 	output {
 		display map type: opengl {
 			species road refresh: true  ;
@@ -284,4 +289,3 @@ experiment BusExperiment type: gui {
 		}
 	}
 }
-
